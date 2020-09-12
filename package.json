@@ -1,5 +1,4 @@
 { 
-  "homepage": "https://0smose.github.io/myportfolio/",
   "name": "my_portfolio",
   "version": "0.1.0",
   "private": true,
@@ -16,6 +15,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1"
   },
+  "homepage": ".",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
