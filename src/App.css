@@ -1,0 +1,347 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.App {
+  height: 100vh;
+  background-color: aqua;
+  
+}
+
+.title {
+  font-family: 'Press Start 2P', cursive;;
+  font-size: 30px;
+  margin: 0;
+  position: relative;
+  left: 55%;
+  top: 40%;
+  transform: translate(-50%, -10%);
+  width: 50%
+  
+}
+
+.name {
+  display: inline;
+}
+
+
+.name::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width .3s;
+}
+
+.name:hover::after {
+
+  width: 25%;
+  transition: width .3s;
+}
+
+
+.navbar {
+  background-color: aqua;
+  font-weight: bolder;
+  height: 20vh;
+  width: 100vw;
+}
+
+.test2 a {
+  color: rgba(255, 255, 255);
+  text-decoration: none;
+
+}
+
+.my-navbar {
+  width: 100%;
+
+ padding-top: 50px;
+ display: flex;
+ justify-content: space-evenly;
+ 
+}
+
+.my-navbar li {
+  color: rgb(255, 255, 255) !important;
+  text-decoration: none;
+}
+/* 
+.container {
+  display: flex;  
+  flex-direction: row;
+} */
+
+
+section {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.work {
+  width: 70%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.paragraph {
+  width: 30%;
+  overflow: hidden;
+  padding-left: 10vw;
+
+}
+
+
+#work {
+  background-color: aqua;
+  
+}
+
+#first-work{
+  background-color: aquamarine;
+}
+
+/* #first-work img{
+  padding: 5vh;
+  height: 90vh;
+}
+
+#first-work p{
+  width: 50%;
+  justify-content: center;
+  padding-right: 50px;
+  line-height: 50px;
+} */
+
+.testimg {
+  padding: 5vh;
+  height: 90vh;
+}
+
+.testpara {
+  width: 70%;
+  justify-content: center;
+  padding-right: 50px;
+  line-height: 50px;
+}
+
+#second-work{
+  background-color: rgb(73, 56, 170);
+  
+}
+
+#second-work img{
+  object-fit: contain; 
+  width: 100%;  
+}
+
+/* #second-work img{
+
+  object-fit: scale-down;
+  padding-left: 10vh;
+  width: 50vw;
+  padding-top: 15vh;
+}
+
+#second-work p{
+  width: 50%;
+  justify-content: center;
+  padding-right: 50px;
+  line-height: 50px;
+} */
+
+
+#third-work{
+  background-color: rgb(170, 56, 151);
+}
+
+/* #third-work img{
+
+  padding-left: 10vh;
+  height: 100vh;
+  width: auto;
+}
+
+#third-work p{
+  width: 30%;
+  justify-content: center;
+  padding-right: 50px;
+  line-height: 50px;
+} */
+
+
+#fourth-work{
+  background-color: rgb(170, 56, 84);
+}
+
+#fourth-work img {
+  object-fit: contain;
+  width: 100%;
+}
+
+/* #fourth-work img{
+  padding-left: 10vh;
+  height: auto;
+  width: 100vw;
+}
+
+#fourth-work p{
+  width: 30%;
+  justify-content: center;
+  padding-right: 50px;
+  line-height: 50px;
+} */
+
+
+.boat {
+  margin-left: -200px;
+  margin-top: 100px;
+  width: 100vw;
+  justify-content: start;
+}
+.boat img {
+  z-index: 1;
+  margin-top: 560px;
+  width: 150px;
+  position: absolute;
+  bottom: 10px;
+  animation: boat 10s linear infinite
+}
+
+@keyframes boat {
+  0%   {left:0px; top:0px;}
+  5%   {left:70px; top:10px;}
+  10%   {left:140px; top:15px;}
+  15%   {left:210px; top:10px;}
+  20%   {left:280px; top:5px;}
+  25%   {left:350px; top:0px;}
+  30%   {left:420px; top:5px;}
+  35%  {left:490px; top:10px;}
+  40%  {left:560px; top:15px;}
+  45%  {left:630px; top:10px;}
+  50%  {left:700px; top:5px;}
+  55%  {left:770px; top:0px;}
+  60%  {left:840px; top:5px;}
+  65%  {left:910px; top:10px;}
+  70%  {left:980px; top:15px;}
+  75%  {left:1050px; top:10px;}
+  80%  {left:1120px; top:5px;}
+  85%  {left:1190px; top:0px;}
+  90%  {left:1260px; top:5px;}
+  95%  {left:1330px; top:10px;}
+  100%  {left:1400px; top:15px;}
+  
+ 
+}
+
+section .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(./img/bluewave.png);
+  background-size: 1500px 100px;
+}
+
+section .wave.wave1 {
+  animation: animate 10s linear infinite;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1500px;
+  }
+}
+section .wave.wave2 {
+  animation: animate2 15s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes animate2 {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -1500px;
+  }
+}
+
+section .wave.wave3 {
+  animation: animate3 20s linear infinite;
+  opacity: 0.6;
+}
+
+@keyframes animate3 {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -500px;
+  }
+}
+
+
+section .wave.wave4 {
+  animation: animate4 15s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes animate4 {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 500px;
+  }
+}
+
+
+.presentation {
+  position: absolute;
+  top: 60%;
+  left: 55%;
+  transform: translateX(-50%);
+  width: 30%;
+  justify-content: right;
+}
+
+.avatar {
+  position: absolute;
+  height: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: solid;
+  border-radius: 50% 20% / 10% 40%;
+}
+
+.home {
+  max-height: 80vh;
+  
+}
+
+.music-player {
+  position: absolute;
+  top: 90%;
+  left: 55%;
+  transform: translateX(-50%);
+  width: 30%;
+  justify-content: right;
+}
