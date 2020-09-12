@@ -2,6 +2,7 @@ import React from 'react';
 import boat from '../img/merry.png';
 import ReactDOM from 'react-dom'
 import ReactAudioPlayer from 'react-audio-player';
+import onepiece from "../../public/sound/one-piece.ogg"
 
 const Landing = () => {
 
@@ -20,7 +21,7 @@ const Landing = () => {
       </div>
       <div className="music-player">
       <ReactAudioPlayer
-        src="../sound/one-piece.ogg"
+        src={onepiece}
         controls
         alt="one piece 2nd opening"
       />
