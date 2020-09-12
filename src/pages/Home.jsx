@@ -20,7 +20,7 @@ const Landing = () => {
       </div>
       <div className="music-player">
       <ReactAudioPlayer
-        src="../sound/one-piece.ogg"
+        src="sound/one-piece.ogg"
         controls
         alt="one piece 2nd opening"
       />
