@@ -2,7 +2,7 @@ import React from 'react';
 import boat from '../img/merry.png';
 import ReactDOM from 'react-dom'
 import ReactAudioPlayer from 'react-audio-player';
-import onepiece from "../../public/sound/one-piece.ogg"
+import onepiece from "../sound/one-piece.ogg"
 
 const Landing = () => {
 
